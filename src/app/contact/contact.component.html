@@ -1,0 +1,47 @@
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <div class="full">
+        <div class="contact-info">
+            <div class="info-item">
+                <a href="https://www.google.com/maps?q=Bengaluru" target="_blank"><i class="fa-solid fa-location-dot"></i>
+                    <span class="details">Bengaluru</span></a>
+                <p> </p>
+            </div>
+            <div class="info-item">
+                <a href="mailto:wbiswajit20001@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> <span
+                        class="details">wbiswajit20001&#64;gmail.com</span></a>
+            </div>
+            <div class="info-item">
+                <a href="tel:9748623974" target="_blank"><i class="fa-solid fa-phone"></i> <span
+                        class="details">9748623974</span> </a>
+            </div>
+            <div class="info-item">
+                <a href=" https://www.linkedin.com/messaging/compose/?recipient=biswajit-shaw" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i><span class="details">biswajit-shaw</span> </a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form name='submit-to-google-sheet'>
+                <div class="input-box">
+                    <input type="text" name="your-name" placeholder="Your Name" required>
+                    <input type="email" name="your-email" placeholder="Your Email" required>
+                </div>
+                <textarea name="your-detail" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxFtlVV1dt3K-Kp58tdJG6k17PpGaVJch8S7r5ySIs2GGQLwEovAw5Xtn83irchYiMR/exec'
+                const form = document.forms['submit-to-google-sheet']
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+        </div>
+    </div>
+</section>
