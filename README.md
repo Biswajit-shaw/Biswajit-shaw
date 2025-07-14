@@ -26,10 +26,9 @@
 
 ### 📈 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=biswajitshaw&show_icons=true&theme=radical" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=biswajitshaw&layout=compact&theme=radical" alt="top-langs" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Biswajit-shaw&show_icons=true&theme=radical" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Biswajit-shaw&layout=compact&theme=radical" alt="top-langs" />
 </p>
-
 ---
 
 ### 📌 Notable Projects
